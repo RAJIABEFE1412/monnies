@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
 
-const User = require(".../schemas/Users").User;
+const User = require("../schemas/Users").User;
 const signup = async (req, res, next) => {
     console.log(req.body);
 
