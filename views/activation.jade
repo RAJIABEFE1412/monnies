@@ -1,0 +1,48 @@
+doctype html
+html(lang='eng')
+	head
+		title 24KOINZ
+		link(rel='shortcut icon' href='images/logo-removebg-preview.png' type='image/x-icon')
+		// Meta tag Keywords
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		meta(charset='UTF-8')
+		meta(name='keywords' content='')
+		script.
+			addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+			}, false);
+			function hideURLbar() {
+			window.scrollTo(0, 1);
+			}
+		link(rel='stylesheet' href='/stylesheets/style.css' type='text/css' media='all')
+		// //Style-CSS
+	body
+		// /login-section
+		section.w3l-login-6
+			.login-hny
+				.form-content
+					//
+						<div class="form-right">
+						<div class="overlay">
+						<div class="grid-info-form">
+						<h5>Not yet having an account ?</h5>
+						<h3>CREATE ACCOUNT </h3>
+						<p>Join 24KOINZ Today and see opportunities attached to it</p>
+						<a href="signup" class="read-more-1 btn">Get Started</a>
+						</div>
+						</div>
+						</div>
+					.form-righte
+						.middle
+							h4 Enter the activation code that has been sent to your email
+						form.signin-form(action='index' method='post')
+							.form-input
+								label Activation Code
+								input(type='number' name='' placeholder='' required='')
+							//
+								<label class="container" >I agree to <a href="#">Conditions</a> of Use and <a href="#">Privacy</a>
+								<input type="checkbox">
+								<span class="checkmark"></span>
+								</label>
+							a.btn(href='index') Submit
+		// //login-section

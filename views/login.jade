@@ -1,0 +1,42 @@
+doctype html
+html(lang='eng')
+	head
+		title 24KOINZ
+		link(rel='shortcut icon' href='images/logo-removebg-preview.png' type='image/x-icon')
+		// Meta tag Keywords
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		meta(charset='UTF-8')
+		meta(name='keywords' content='')
+		script.
+			addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+			}, false);
+			function hideURLbar() {
+			window.scrollTo(0, 1);
+			}
+		link(rel='stylesheet' href='/stylesheets/style.css' type='text/css' media='all')
+		// //Style-CSS
+	body
+		// /login-section
+		section.w3l-login-6
+			.login-hny
+				.form-content
+					.form-right
+						.overlay
+							.grid-info-form
+								h5 Not yet having an account ?
+								h3 CREATE ACCOUNT 
+								p Join 24KOINZ Today and see opportunities attached to it
+								a.read-more-1.btn(href='signup') Get Started
+					.form-left
+						.middle
+							h4 Login 
+						form.signin-form(action='/login_completion' method='post')
+							.form-input
+								label Email
+								input(type='text' name='email' placeholder='' required='')
+							.form-input
+								label Password
+								input(type='password' name='password' placeholder='' required='')
+							input.login-btn(type="submit", value="LOGIN") 
+		// //login-section

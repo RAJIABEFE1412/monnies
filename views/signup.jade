@@ -1,0 +1,60 @@
+doctype html
+html(lang='zxx')
+	head
+		title 24KOINZ
+		link(rel='shortcut icon' href='images/logo-removebg-preview.png' type='image/x-icon')
+		// Meta tag Keywords
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		meta(charset='UTF-8')
+		meta(name='keywords' content=' ')
+		script.
+			addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+			}, false);
+			function hideURLbar() {
+			window.scrollTo(0, 1);
+			}
+		// //Meta tag Keywords
+		// /Style-CSS
+		link(rel='stylesheet' href='/stylesheets/style.css' type='text/css' media='all')
+		// //Style-CSS
+	body
+		// /login-section
+		section.w3l-login-6
+			.login-hny
+				.form-content
+					.form-right
+						.overlay
+							.grid-info-form
+								h5 Already having an account?
+								p Login to 24KOINZ Today and see your latest trends 
+								a.read-more-1.btn(href='login') Login
+					.form-left
+						.middle
+							h4 Join Us 
+							p Create Your Account, It's Free.
+						form.signin-form(action='/signup_completion' method='post')
+							.form-input
+								label Name
+								input(type='text' name='username' placeholder='' required='')
+							.form-input
+								label Email
+								input(type='email' name='email' placeholder='' required='')
+							.form-input
+								label Password
+								input(type='password' name='pwd' placeholder='' required='')
+							.form-input
+								label Type
+								select(name='type' id='' required='')
+									option(value='Investor' selected) Investor
+									option(value='Vendor') Vendor
+							label.container
+								| I agree to 
+								a(href='#') Conditions
+								|  of Use and 
+								a(href='#') Privacy
+								input(type='checkbox' name="terms" required)
+								span.checkmark
+							
+							input.login-btn(type='submit' value="SIGNUP")
+		// //login-section

@@ -1,0 +1,63 @@
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title The HTML5 Herald
+		meta(name='description' content='The HTML5 Herald')
+		meta(name='author' content='JohnOseni')
+		link(rel='stylesheet' href='/stylesheets/pages/countdown.css?v=1.0')
+	body
+		.wrap
+			h1
+				| Draft 
+				strong Countdown
+			.countdown
+				.bloc-time.hours(data-init-value='24')
+					span.count-title Hours
+					.figure.hours.hours-1
+						span.top 2
+						span.top-back
+							span 2
+						span.bottom 2
+						span.bottom-back
+							span 2
+					.figure.hours.hours-2
+						span.top 4
+						span.top-back
+							span 4
+						span.bottom 4
+						span.bottom-back
+							span 4
+				.bloc-time.min(data-init-value='0')
+					span.count-title Minutes
+					.figure.min.min-1
+						span.top 0
+						span.top-back
+							span 0
+						span.bottom 0
+						span.bottom-back
+							span 0
+					.figure.min.min-2
+						span.top 0
+						span.top-back
+							span 0
+						span.bottom 0
+						span.bottom-back
+							span 0
+				.bloc-time.sec(data-init-value='0')
+					span.count-title Seconds
+					.figure.sec.sec-1
+						span.top 0
+						span.top-back
+							span 0
+						span.bottom 0
+						span.bottom-back
+							span 0
+					.figure.sec.sec-2
+						span.top 0
+						span.top-back
+							span 0
+						span.bottom 0
+						span.bottom-back
+							span 0
+		script(src='https://code.jquery.com/jquery-3.5.1.js' integrity='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=' crossorigin='anonymous')
+		script(src='/javascripts/countdown.js')
